@@ -1,0 +1,46 @@
+body {
+  font-family: "exo";
+  background: #000000;
+}
+
+.highlight {
+  color: #FF0505;
+}
+
+.btn {
+  background-image: linear-gradient(90deg, #1AE501, #085200);
+  text-align: center;
+  font-weight: 500;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+#hero {
+  background-image: url("./../../src/img/HEROBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 688px;
+  height: 100%;
+  background-position-x: center;
+  background-position-y: center;
+}
+#hero img {
+  margin-bottom: 2rem;
+}
+#hero h1 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+#hero p {
+  color: #FFFFFF;
+  font-weight: 500;
+  max-width: 17rem;
+}
+#hero p .subSmall {
+  font-weight: lighter;
+}
+#hero .btn {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
