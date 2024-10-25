@@ -1,6 +1,17 @@
+@charset "UTF-8";
 body {
   font-family: "exo";
   background: #000000;
+}
+
+h1,
+h2 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 .highlight {
@@ -13,6 +24,7 @@ body {
   font-weight: 500;
   border-radius: 10px;
   color: #FFFFFF;
+  border: 1px;
 }
 
 #hero {
@@ -27,10 +39,6 @@ body {
 #hero img {
   margin-bottom: 2rem;
 }
-#hero h1 {
-  color: #FFFFFF;
-  font-weight: bold;
-}
 #hero p {
   color: #FFFFFF;
   font-weight: 500;
@@ -41,6 +49,55 @@ body {
 }
 #hero .btn {
   width: 100%;
+}
+
+#vantagens .card {
+  border-radius: 10px;
+  border: 1px solid #1AE501;
+  background: #0D0D0D;
+  color: #FFFFFF;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  #vantagens .card {
+    min-height: 28rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  #vantagens .card {
+    min-height: 24rem;
+  }
+}
+#vantagens .card .icon {
+  background: linear-gradient(180deg, #1AE501, #085200);
+  /* Gradiente do ícone */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+#vantagens .card .icon img {
+  width: 1.5rem;
+}
+#vantagens .card .card-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+#vantagens .card .card-text {
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+
+.bg-2 {
+  background: url("./../../src/img/bg-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
 }
 
 /*# sourceMappingURL=style.css.map */
