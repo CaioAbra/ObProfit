@@ -102,10 +102,79 @@ h2 {
     }
 }
 
+#faq {
+    h2 {
+        color: #1AE501;
+    }
+}
+
 .bg-2 {
     background: url('./../../src/img/bg-2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
+}
+
+/* Variáveis de cor */
+$color-primary: #1AE501;
+/* Verde */
+$color-bg-dark: #0D0D0D;
+/* Fundo escuro */
+$color-text: #FFFFFF;
+/* Texto branco */
+$color-border-light: rgba(255, 255, 255, 0.2);
+/* Borda leve */
+$color-muted: #adadad;
+/* Cinza claro */
+
+/* Estilo do Accordion */
+.accordion {
+    border-radius: 10px;
+
+    .accordion-item {
+        border-bottom: 1px solid $color-border-light;
+        margin-bottom: 10px;
+        border: none;
+
+        .accordion-header {
+            cursor: pointer;
+            padding: 15px;
+            background-color: $color-bg-dark;
+            color: $color-text;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+            padding-left: 2rem;
+            font-family: 'exo';
+
+
+            &:hover {
+                background-color: rgba(0, 255, 0, 0.1);
+                /* Efeito hover verde claro */
+            }
+
+            /* Ícone */
+            .accordion-icon {
+                font-size: 1rem;
+                transition: transform 0.3s ease;
+            }
+
+            &.active .accordion-icon {
+                transform: rotate(180deg);
+                /* Inverter ícone quando ativo */
+            }
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 15px;
+            color: $color-muted;
+            font-size: 0.9rem;
+            background-color: $color-bg-dark;
+            font-family: 'exo';
+        }
+    }
 }
